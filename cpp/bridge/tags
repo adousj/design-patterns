@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Abstraction	Abstraction.cpp	/^Abstraction::Abstraction(Implementor* imp)$/;"	f	class:Abstraction
+Abstraction	Abstraction.h	/^class Abstraction {$/;"	c
+CC	makefile	/^CC=g++$/;"	m
+CFLAGS	makefile	/^CFLAGS=-std=c++11$/;"	m
+ConcreteImplementorA	ConcreteImplementorA.h	/^class ConcreteImplementorA : public Implementor {$/;"	c
+ConcreteImplementorB	ConcreteImplementorB.h	/^class ConcreteImplementorB : public Implementor {$/;"	c
+Implementor	Implementor.h	/^class Implementor {$/;"	c
+RefinedAbstraction	RefinedAbstraction.cpp	/^RefinedAbstraction::RefinedAbstraction(Implementor* imp)$/;"	f	class:RefinedAbstraction
+RefinedAbstraction	RefinedAbstraction.h	/^class RefinedAbstraction :public Abstraction {$/;"	c
+main	main.cpp	/^int main()$/;"	f
+operation	RefinedAbstraction.cpp	/^void RefinedAbstraction::operation()$/;"	f	class:RefinedAbstraction
+operationImp	ConcreteImplementorA.cpp	/^void ConcreteImplementorA::operationImp()$/;"	f	class:ConcreteImplementorA
+operationImp	ConcreteImplementorB.cpp	/^void ConcreteImplementorB::operationImp()$/;"	f	class:ConcreteImplementorB
+pImp	Abstraction.h	/^    Implementor* pImp;$/;"	m	class:Abstraction
+~Abstraction	Abstraction.cpp	/^Abstraction::~Abstraction()$/;"	f	class:Abstraction
+~RefinedAbstraction	RefinedAbstraction.cpp	/^RefinedAbstraction::~RefinedAbstraction()$/;"	f	class:RefinedAbstraction
