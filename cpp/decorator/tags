@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	makefile	/^CC=g++$/;"	m
+CFLAGS	makefile	/^CFLAGS=-std=c++11 -I.$/;"	m
+Component	Component.h	/^    Component() {};$/;"	f	class:Component
+Component	Component.h	/^class Component {$/;"	c
+ConcreteComponent	ConcreteComponent.cpp	/^ConcreteComponent::ConcreteComponent()$/;"	f	class:ConcreteComponent
+ConcreteComponent	ConcreteComponent.h	/^class ConcreteComponent : public Component {$/;"	c
+ConcreteDecoratorA	ConcreteDecoratorA.h	/^    ConcreteDecoratorA() {};$/;"	f	class:ConcreteDecoratorA
+ConcreteDecoratorA	ConcreteDecoratorA.h	/^class ConcreteDecoratorA : public Decorator {$/;"	c
+ConcreteDecoratorB	ConcreteDecoratorB.h	/^    ConcreteDecoratorB() {};$/;"	f	class:ConcreteDecoratorB
+ConcreteDecoratorB	ConcreteDecoratorB.h	/^class ConcreteDecoratorB : public Decorator {$/;"	c
+Decorator	Decorator.h	/^    Decorator(Component* component) : _component(component)$/;"	f	class:Decorator
+Decorator	Decorator.h	/^class Decorator : public Component {$/;"	c
+_component	Decorator.h	/^    Component* _component;$/;"	m	class:Decorator
+addBehavior	ConcreteDecoratorA.cpp	/^void ConcreteDecoratorA::addBehavior()$/;"	f	class:ConcreteDecoratorA
+addBehavior	ConcreteDecoratorB.cpp	/^void ConcreteDecoratorB::addBehavior()$/;"	f	class:ConcreteDecoratorB
+main	main.cpp	/^int main(int argc, char const* argv[])$/;"	f
+operation	ConcreteComponent.cpp	/^void ConcreteComponent::operation()$/;"	f	class:ConcreteComponent
+operation	ConcreteDecoratorA.cpp	/^void ConcreteDecoratorA::operation()$/;"	f	class:ConcreteDecoratorA
+operation	ConcreteDecoratorB.cpp	/^void ConcreteDecoratorB::operation()$/;"	f	class:ConcreteDecoratorB
+operation	Decorator.h	/^    virtual void operation()$/;"	f	class:Decorator
+~Component	Component.h	/^    virtual ~Component() {};$/;"	f	class:Component
+~ConcreteComponent	ConcreteComponent.cpp	/^ConcreteComponent::~ConcreteComponent()$/;"	f	class:ConcreteComponent
+~ConcreteDecoratorA	ConcreteDecoratorA.h	/^    virtual ~ConcreteDecoratorA() {};$/;"	f	class:ConcreteDecoratorA
+~ConcreteDecoratorB	ConcreteDecoratorB.h	/^    virtual ~ConcreteDecoratorB() {};$/;"	f	class:ConcreteDecoratorB
+~Decorator	Decorator.h	/^    virtual ~Decorator()$/;"	f	class:Decorator
