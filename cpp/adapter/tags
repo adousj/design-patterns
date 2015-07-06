@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+Adaptee	Adaptee.cpp	/^Adaptee::Adaptee()$/;"	f	class:Adaptee
+Adaptee	Adaptee.h	/^class Adaptee {$/;"	c
+Adapter	Adapter.cpp	/^Adapter::Adapter(Adaptee *adaptee)$/;"	f	class:Adapter
+Adapter	Adapter.h	/^class Adapter : public Target {$/;"	c
+CC	makefile	/^CC = clang++$/;"	m
+CFLAGS	makefile	/^CFLAGS = -std=c++11$/;"	m
+Target	Target.h	/^class Target {$/;"	c
+m_pAdaptee	Target.h	/^	Adaptee* m_pAdaptee;$/;"	m	class:Target
+main	main.cpp	/^int main()$/;"	f
+request	Adapter.cpp	/^void Adapter::request()$/;"	f	class:Adapter
+specialRequest	Adaptee.cpp	/^void Adaptee::specialRequest()$/;"	f	class:Adaptee
+~Adaptee	Adaptee.cpp	/^Adaptee::~Adaptee()$/;"	f	class:Adaptee
+~Adapter	Adapter.cpp	/^Adapter::~Adapter()$/;"	f	class:Adapter

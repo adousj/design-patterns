@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+Builder	Builder.h	/^  Builder() {};$/;"	f	class:Builder
+Builder	Builder.h	/^class Builder$/;"	c
+ConcreteBuilder	ConcreteBuilder.cpp	/^ConcreteBuilder::ConcreteBuilder() : product(nullptr)$/;"	f	class:ConcreteBuilder
+ConcreteBuilder	ConcreteBuilder.h	/^class ConcreteBuilder : public Builder$/;"	c
+Director	Director.cpp	/^Director::Director() : builder(nullptr)$/;"	f	class:Director
+Director	Director.h	/^class Director$/;"	c
+Product	Product.cpp	/^Product::Product() : partA(""), partB(""), partC("")$/;"	f	class:Product
+Product	Product.h	/^class Product$/;"	c
+buildPartA	ConcreteBuilder.cpp	/^void ConcreteBuilder::buildPartA()$/;"	f	class:ConcreteBuilder
+buildPartB	ConcreteBuilder.cpp	/^void ConcreteBuilder::buildPartB()$/;"	f	class:ConcreteBuilder
+buildPartC	ConcreteBuilder.cpp	/^void ConcreteBuilder::buildPartC()$/;"	f	class:ConcreteBuilder
+builder	Director.h	/^  Builder* builder;$/;"	m	class:Director
+construct	Director.cpp	/^Product* Director::construct()$/;"	f	class:Director
+getResult	ConcreteBuilder.cpp	/^Product* ConcreteBuilder::getResult()$/;"	f	class:ConcreteBuilder
+main	main.cpp	/^int main()$/;"	f
+partA	Product.h	/^  std::string partA;$/;"	m	class:Product
+partB	Product.h	/^  std::string partB;$/;"	m	class:Product
+partC	Product.h	/^  std::string partC;$/;"	m	class:Product
+product	ConcreteBuilder.h	/^  Product *product;$/;"	m	class:ConcreteBuilder
+setBuilder	Director.cpp	/^void Director::setBuilder(Builder* builder)$/;"	f	class:Director
+setPartA	Product.cpp	/^void Product::setPartA(std::string partA)$/;"	f	class:Product
+setPartB	Product.cpp	/^void Product::setPartB(std::string partB)$/;"	f	class:Product
+setPartC	Product.cpp	/^void Product::setPartC(std::string partC)$/;"	f	class:Product
+~ConcreteBuilder	ConcreteBuilder.cpp	/^ConcreteBuilder::~ConcreteBuilder()$/;"	f	class:ConcreteBuilder
+~Director	Director.cpp	/^Director::~Director()$/;"	f	class:Director
+~Product	Product.cpp	/^Product::~Product()$/;"	f	class:Product
