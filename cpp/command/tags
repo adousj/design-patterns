@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+CC	makefile	/^CC = clang++$/;"	m
+CFLAGS	makefile	/^CFLAGS = -std=c++11 -I.$/;"	m
+Command	Command.h	/^    Command() {}$/;"	f	class:Command
+Command	Command.h	/^    virtual Command() {}$/;"	f	class:Command
+Command	Command.h	/^class Command {$/;"	c
+ConcreteCommand	ConcreteCommand.cpp	/^ConcreteCommand::ConcreteCommand(Receiver* receiver)$/;"	f	class:ConcreteCommand
+ConcreteCommand	ConcreteCommand.h	/^class ConcreteCommand : public Command {$/;"	c
+Invoker	Invoker.cpp	/^Invoker::Invoker(Command* command)$/;"	f	class:Invoker
+Invoker	Invoker.h	/^class Invoker {$/;"	c
+Receiver	Receiver.cpp	/^Receiver::Receiver()$/;"	f	class:Receiver
+Receiver	Receiver.h	/^class Receiver {$/;"	c
+_command	Invoker.h	/^    Command* _command;$/;"	m	class:Invoker
+_receiver	ConcreteCommand.h	/^    Receiver* _receiver;$/;"	m	class:ConcreteCommand
+action	Receiver.cpp	/^void Receiver::action()$/;"	f	class:Receiver
+call	Invoker.cpp	/^void Invoker::call()$/;"	f	class:Invoker
+execute	ConcreteCommand.cpp	/^void ConcreteCommand::execute()$/;"	f	class:ConcreteCommand
+main	main.cpp	/^int main()$/;"	f
+~ConcreteCommand	ConcreteCommand.cpp	/^ConcreteCommand::~ConcreteCommand()$/;"	f	class:ConcreteCommand
+~Invoker	Invoker.cpp	/^Invoker::~Invoker()$/;"	f	class:Invoker
+~Receiver	Receiver.cpp	/^Receiver::~Receiver()$/;"	f	class:Receiver
