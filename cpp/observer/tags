@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+CC	makefile	/^CC = clang++$/;"	m
+CFLAGS	makefile	/^CFLAGS = -std=c++11 -I.$/;"	m
+ConcreteObserver	ConcreteObserver.cpp	/^ConcreteObserver::ConcreteObserver(std::string str)$/;"	f	class:ConcreteObserver
+ConcreteObserver	ConcreteObserver.h	/^class ConcreteObserver : public Observer {$/;"	c
+ConcreteSubject	ConcreteSubject.cpp	/^ConcreteSubject::ConcreteSubject()$/;"	f	class:ConcreteSubject
+ConcreteSubject	ConcreteSubject.h	/^class ConcreteSubject : public Subject {$/;"	c
+Observer	Observer.h	/^    Observer() {}$/;"	f	class:Observer
+Observer	Observer.h	/^class Observer {$/;"	c
+Subject	Subject.cpp	/^Subject::Subject()$/;"	f	class:Subject
+Subject	Subject.h	/^class Subject {$/;"	c
+attach	Subject.cpp	/^void Subject::attach(Observer* observer)$/;"	f	class:Subject
+detach	Subject.cpp	/^void Subject::detach(Observer* observer)$/;"	f	class:Subject
+get_state	ConcreteSubject.cpp	/^int ConcreteSubject::get_state()$/;"	f	class:ConcreteSubject
+main	main.cpp	/^int main()$/;"	f
+name	ConcreteObserver.h	/^    std::string name;$/;"	m	class:ConcreteObserver
+notify	Subject.cpp	/^void Subject::notify()$/;"	f	class:Subject
+observer_state	ConcreteObserver.h	/^    int observer_state;$/;"	m	class:ConcreteObserver
+observers	Subject.h	/^    std::vector<Observer*> observers;$/;"	m	class:Subject
+set_satte	ConcreteSubject.cpp	/^void ConcreteSubject::set_satte(int n)$/;"	f	class:ConcreteSubject
+state	ConcreteSubject.h	/^    int state;$/;"	m	class:ConcreteSubject
+subject	ConcreteObserver.h	/^    ConcreteSubject *subject;$/;"	m	class:ConcreteObserver
+update	ConcreteObserver.cpp	/^void ConcreteObserver::update()$/;"	f	class:ConcreteObserver
+~ConcreteObserver	ConcreteObserver.cpp	/^ConcreteObserver::~ConcreteObserver()$/;"	f	class:ConcreteObserver
+~ConcreteSubject	ConcreteSubject.cpp	/^ConcreteSubject::~ConcreteSubject()$/;"	f	class:ConcreteSubject
+~Observer	Observer.h	/^    virtual ~Observer() {}$/;"	f	class:Observer
+~Subject	Subject.cpp	/^Subject::~Subject()$/;"	f	class:Subject
