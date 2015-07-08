@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+CC	makefile	/^CC = clang++$/;"	m
+CFLAGS	makefile	/^CFLAGS = -std=c++11 -I.$/;"	m
+Colleague	Colleague.h	/^    Colleague()$/;"	f	class:Colleague
+Colleague	Colleague.h	/^class Colleague {$/;"	c
+ConcreteColleagueA	ConcreteColleagueA.cpp	/^ConcreteColleagueA::ConcreteColleagueA()$/;"	f	class:ConcreteColleagueA
+ConcreteColleagueA	ConcreteColleagueA.h	/^class ConcreteColleagueA : public Colleague {$/;"	c
+ConcreteColleagueB	ConcreteColleagueB.cpp	/^ConcreteColleagueB::ConcreteColleagueB()$/;"	f	class:ConcreteColleagueB
+ConcreteColleagueB	ConcreteColleagueB.h	/^class ConcreteColleagueB : public Colleague {$/;"	c
+ConcreteMediator	ConcreteMediator.cpp	/^ConcreteMediator::ConcreteMediator()$/;"	f	class:ConcreteMediator
+ConcreteMediator	ConcreteMediator.h	/^class ConcreteMediator : public Mediator {$/;"	c
+Mediator	Mediator.h	/^    Mediator() {}$/;"	f	class:Mediator
+Mediator	Mediator.h	/^class Mediator {$/;"	c
+_mediator	Colleague.h	/^    Mediator* _mediator;$/;"	m	class:Colleague
+colleague_map	ConcreteMediator.h	/^    std::map<int, Colleague*> colleague_map;$/;"	m	class:ConcreteMediator
+main	main.cpp	/^int main()$/;"	f
+operation	ConcreteMediator.cpp	/^void ConcreteMediator::operation(int nWho, std::string str)$/;"	f	class:ConcreteMediator
+receivemsg	ConcreteColleagueA.cpp	/^void ConcreteColleagueA::receivemsg(std::string str)$/;"	f	class:ConcreteColleagueA
+receivemsg	ConcreteColleagueB.cpp	/^void ConcreteColleagueB::receivemsg(std::string str)$/;"	f	class:ConcreteColleagueB
+registered	ConcreteMediator.cpp	/^void ConcreteMediator::registered(int nWho, Colleague* colleague)$/;"	f	class:ConcreteMediator
+sendmsg	ConcreteColleagueA.cpp	/^vodi ConcreteColleagueA::sendmsg(int toWho, std::string str)$/;"	f	class:ConcreteColleagueA
+sendmsg	ConcreteColleagueB.cpp	/^vodi ConcreteColleagueB::sendmsg(int toWho, std::string str)$/;"	f	class:ConcreteColleagueB
+setMediator	Colleague.h	/^    void setMediator(Mediator* mediator)$/;"	f	class:Colleague
+~Colleague	Colleague.h	/^    virtual ~Colleague() {}$/;"	f	class:Colleague
+~ConcreteColleagueA	ConcreteColleagueA.cpp	/^ConcreteColleagueA::~ConcreteColleagueA()$/;"	f	class:ConcreteColleagueA
+~ConcreteColleagueB	ConcreteColleagueB.cpp	/^ConcreteColleagueB::~ConcreteColleagueB()$/;"	f	class:ConcreteColleagueB
+~ConcreteMediator	ConcreteMediator.cpp	/^ConcreteMediator::~ConcreteMediator()$/;"	f	class:ConcreteMediator
+~Mediator	Mediator.h	/^    virtual ~Mediator() {}$/;"	f	class:Mediator
